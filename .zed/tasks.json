@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Odin: Watch & Run",
+    "command": "watchexec",
+    "args": ["--restart", "--exts", "odin", "--", "odin", "run", "src/"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+
+    "reveal": "never",
+    "hide": "on_success",
+  },
+]
