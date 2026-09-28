@@ -1,4 +1,6 @@
-alias ob="mkdir -p build && odin build src/ -out:build/Boids\ Debug"
-alias obr="mkdir -p build && odin build src/ -out:build/Boids\ Debug && build/Boids\ Debug"
-alias obo="mkdir -p build && odin build src/ -o:speed -out:build/Boids"
-alias obor="mkdir -p build && odin build src/ -o:speed -out:build/Boids && build/Boids"
+[[ -d "build" ]] || mkdir build
+
+alias ob="odin build src -out:build/Boids\ Debug"
+alias obr="odin build src -out:build/Boids\ Debug && build/Boids\ Debug"
+alias obo="odin build src -o:speed -out:build/Boids"
+alias obor="odin build src -o:speed -out:build/Boids && build/Boids"
